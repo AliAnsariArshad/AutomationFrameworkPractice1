@@ -32,7 +32,7 @@ class TestLogin:
             screenshotname = testname + "_" + currenttime
             allure.attach(self.driver.get_screenshot_as_png(), name=screenshotname,
                           attachment_type=allure.attachment_type.PNG)
-            driver.get_screenshot_as_file("C:\\Users\\ansarar\\SeleniumProjects\\AutomationFrameworkPractice\\screenshots\\" +
+            self.driver.get_screenshot_as_file("C:\\Users\\ansarar\\SeleniumProjects\\AutomationFrameworkPractice\\screenshots\\" +
                                           screenshotname + ".png")
             raise
 
@@ -44,7 +44,7 @@ class TestLogin:
             screenshotname = testname + "_" + currenttime
             allure.attach(self.driver.get_screenshot_as_png(), name=screenshotname,
                           attachment_type=allure.attachment_type.PNG)
-            driver.get_screenshot_as_file(
+            self.driver.get_screenshot_as_file(
                 "C:\\Users\\ansarar\\SeleniumProjects\\AutomationFrameworkPractice\\screenshots\\" +
                 screenshotname + ".png")
             raise
