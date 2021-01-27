@@ -36,7 +36,7 @@ class TestLogin:
                                           screenshotname + ".png")
             raise
 
-        except AssertionError as error :
+        except AssertionError as error:
             print("assertion error")
             print(error)
             currenttime = moment.now().strftime("%H-%M-%S_%d-%m-%Y")
