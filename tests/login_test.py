@@ -1,10 +1,10 @@
-import moment
 from selenium.common import exceptions as ex
 import allure
 import pytest
 from pages.loginPage import LoginPage
 from pages.homePage import HomePage
 from utils import utils as ut
+import moment
 
 
 @pytest.mark.usefixtures("test_setup")
