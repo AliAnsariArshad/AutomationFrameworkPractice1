@@ -24,7 +24,7 @@ class TestLogin:
             home.click_welcome()
             home.click_logout()
             page_tittle = driver.title
-            assert page_tittle == "OrangeHR"
+            assert page_tittle == "OrangeHRM"
 
         except ex.ElementNotVisibleException:
             currenttime = moment.now().strftime("%H-%M-%S_%d-%m-%Y")
